@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <title>The Planets</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <section id="site-navigation" class="site-navigation-container">
+      <h1 class="site-logo">THE PLANETS</h1>
+      <img class="hamburger"
+        src="https://res.cloudinary.com/rjsmedia/image/upload/v1639000288/The%20Planets/icon-hamburger_z9nckv.svg"
+        alt="" />
+      <!-- DROPDOWN -->
+      <div class="mobile-navigation-planets">
+        <div class="mobile-planet-link-container" data-id="mercury">
+          <div class="planet-circle mercury" data-id="mercury"></div>
+          <a class="mobile-planet-link planet-link-master" href="" data-id="mercury">Mercury</a>
+        </div>
+        <div class="mobile-planet-link-container" data-id="venus">
+          <div class="planet-circle venus" data-id="venus"></div>
+          <a class="mobile-planet-link planet-link-master" href="" data-id="venus">Venus</a>
+        </div>
+        <div class="mobile-planet-link-container" data-id="earth">
+          <div class="planet-circle earth" data-id="earth"></div>
+          <a class="mobile-planet-link planet-link-master" href="" data-id="earth">Earth</a>
+        </div>
+        <div class="mobile-planet-link-container" data-id="mars">
+          <div class="planet-circle mars" data-id="mars"></div>
+          <a class="mobile-planet-link planet-link-master" href="" data-id="mars">Mars</a>
+        </div>
+        <div class="mobile-planet-link-container" data-id="jupiter">
+          <div class="planet-circle jupiter" data-id="jupiter"></div>
+          <a class="mobile-planet-link planet-link-master" href="" data-id="jupiter">Jupiter</a>
+        </div>
+        <div class="mobile-planet-link-container" data-id="saturn">
+          <div class="planet-circle saturn" data-id="saturn"></div>
+          <a class="mobile-planet-link planet-link-master" href="" data-id="saturn">Saturn</a>
+        </div>
+        <div class="mobile-planet-link-container" data-id="uranus">
+          <div class="planet-circle uranus" data-id="uranus"></div>
+          <a class="mobile-planet-link planet-link-master" href="" data-id="uranus">Uranus</a>
+        </div>
+        <div class="mobile-planet-link-container" data-id="neptune">
+          <div class="planet-circle neptune" data-id="neptune"></div>
+          <a class="mobile-planet-link planet-link-master" href="" data-id="neptune">Neptune</a>
+        </div>
+      </div>
+      <!-- END DROPDOWN -->
+      <div class="navigation-planets">
+        <div class="link-container">
+          <a class="planet-link planet-link-master-1" href="">Mercury</a>
+          <div class="breadcrumb"></div>
+        </div>
+        <div class="link-container">
+          <a class="planet-link planet-link-master-1" href="">Venus</a>
+          <div class="breadcrumb"></div>
+        </div>
+        <div class="link-container">
+          <a class="planet-link planet-link-master-1" href="">Earth</a>
+          <div class="breadcrumb"></div>
+        </div>
+        <div class="link-container">
+          <a class="planet-link planet-link-master-1" href="">Mars</a>
+          <div class="breadcrumb"></div>
+        </div>
+        <div class="link-container">
+          <a class="planet-link planet-link-master-1" href="">Jupiter</a>
+          <div class="breadcrumb"></div>
+        </div>
+        <div class="link-container">
+          <a class="planet-link planet-link-master-1" href="">Saturn</a>
+          <div class="breadcrumb"></div>
+        </div>
+        <div class="link-container">
+          <a class="planet-link planet-link-master-1" href="">Uranus</a>
+          <div class="breadcrumb"></div>
+        </div>
+        <div class="link-container">
+          <a class="planet-link planet-link-master-1" href="">Neptune</a>
+          <div class="breadcrumb"></div>
+        </div>
+
+      </div>
+    </section>
+    <section class="mobile-stats-container">
+      <button data-id="overview" data-img="planet" class="btn btn-mobile-stats">
+        OVERVIEW
+      </button>
+      <button data-id="structure" data-img="internal" class="btn btn-mobile-stats">
+        STRUCTURE
+      </button>
+      <button data-id="geology" data-img="geology" class="btn btn-mobile-stats">
+        SURFACE
+      </button>
+    </section>
+  </div>
+
+  <div class="site-control">
+    <section id="planet-display" class="planet-display-container">
+      <div class="planet-image-container">
+        <img class="planet-image" src="" alt="" />
+      </div>
+      <div class="planet-info-container">
+        <div class="planet-info-content">
+          <h1 class="planet-name"></h1>
+          <p class="planet-info-text"></p>
+          <a class="planet-wiki-link" href="">Source: <span>Wikipedia</span>
+          </a>
+        </div>
+        <div class="planet-info-tabs">
+          <button data-id="overview" data-img="planet" class="btn btn-info-tab">
+            <span>01</span>OVERVIEW
+          </button>
+          <button data-id="structure" data-img="internal" class="btn btn-info-tab">
+            <span>02</span>INTERNAL STRUCTURE
+          </button>
+          <button data-id="geology" data-img="geology" class="btn btn-info-tab">
+            <span>03</span>SURFACE GEOLOGY
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="planet-stats" class="planet-stats-container">
+      <div class="stat-card-container">
+        <p class="stat-title">Rotation Time</p>
+        <p class="stat-value stat-rotation"></p>
+      </div>
+      <div class="stat-card-container">
+        <p class="stat-title">Revolution Time</p>
+        <p class="stat-value stat-revolution"></p>
+      </div>
+      <div class="stat-card-container">
+        <p class="stat-title">Radius</p>
+        <p class="stat-value stat-radius"></p>
+      </div>
+      <div class="stat-card-container">
+        <p class="stat-title">AVERAGE Temp.</p>
+        <p class="stat-value stat-temp"></p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
